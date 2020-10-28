@@ -1,7 +1,7 @@
-package com.sample.distributedtracing.utils;
+package com.sample.telemetrynewrelic.utils;
 
-import com.sample.distributedtracing.core.Istorage;
-import com.sample.distributedtracing.core.TraceConstants;
+import com.sample.telemetrynewrelic.core.Istorage;
+import com.sample.telemetrynewrelic.core.TraceConstants;
 import io.grpc.Context;
 import java.util.Objects;
 

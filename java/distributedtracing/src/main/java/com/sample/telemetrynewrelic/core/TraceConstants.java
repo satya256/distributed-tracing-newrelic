@@ -1,4 +1,4 @@
-package com.sample.distributedtracing.core;
+package com.sample.telemetrynewrelic.core;
 
 /**
  * The type Trace constants.

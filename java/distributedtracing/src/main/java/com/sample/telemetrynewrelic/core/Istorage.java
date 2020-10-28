@@ -1,6 +1,6 @@
-package com.sample.distributedtracing.core;
+package com.sample.telemetrynewrelic.core;
 
-import com.sample.distributedtracing.model.TraceModel;
+import com.sample.telemetrynewrelic.model.TraceModel;
 
 /**
  * The interface Storage.

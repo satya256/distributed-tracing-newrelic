@@ -1,4 +1,4 @@
-package com.sample.distributedtracing.newrelic;
+package com.sample.telemetrynewrelic.newrelic;
 
 /**
  * The type Attribute constants.

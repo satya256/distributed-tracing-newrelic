@@ -1,6 +1,6 @@
-package com.sample.distributedtracing.core;
+package com.sample.telemetrynewrelic.core;
 
-import com.sample.distributedtracing.model.TraceModel;
+import com.sample.telemetrynewrelic.model.TraceModel;
 import io.grpc.Context;
 import io.opentelemetry.trace.Span;
 import io.opentelemetry.trace.SpanContext;

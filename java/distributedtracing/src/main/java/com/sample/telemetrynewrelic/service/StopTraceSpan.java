@@ -1,8 +1,8 @@
-package com.sample.distributedtracing.service;
+package com.sample.telemetrynewrelic.service;
 
-import com.sample.distributedtracing.core.TraceConstants;
-import com.sample.distributedtracing.core.TraceSdk;
-import com.sample.distributedtracing.model.TraceModel;
+import com.sample.telemetrynewrelic.core.TraceConstants;
+import com.sample.telemetrynewrelic.core.TraceSdk;
+import com.sample.telemetrynewrelic.model.TraceModel;
 import io.opentelemetry.trace.Status;
 import java.util.Objects;
 

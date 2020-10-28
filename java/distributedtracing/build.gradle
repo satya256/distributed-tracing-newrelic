@@ -31,7 +31,7 @@ java {
 
 def projectGroup = 'com.sample'
 def projectVersion = '0.0.1-SNAPSHOT'
-def projectName = 'distributedtracing'
+def projectName = 'telemetrynewrelic'
 
 version(projectVersion)
 
@@ -86,8 +86,8 @@ publishing {
             from(components.java)
 
             pom {
-                name = 'Distributed Tracing'
-                description = 'Distributed Tracing'
+                name = 'Open telemetry Newrelic Exporter'
+                description = 'Open telemetry Newrelic Exporter'
             }
         }
     }

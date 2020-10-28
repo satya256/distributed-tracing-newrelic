@@ -1,4 +1,4 @@
-package com.sample.distributedtracing.newrelic;
+package com.sample.telemetrynewrelic.newrelic;
 
 import com.newrelic.telemetry.Attributes;
 import com.newrelic.telemetry.opentelemetry.export.AttributeNames;

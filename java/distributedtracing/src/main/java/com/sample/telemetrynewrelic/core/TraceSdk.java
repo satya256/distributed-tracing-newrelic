@@ -1,6 +1,6 @@
-package com.sample.distributedtracing.core;
+package com.sample.telemetrynewrelic.core;
 
-import com.sample.distributedtracing.newrelic.SpanProcessorUtil;
+import com.sample.telemetrynewrelic.newrelic.SpanProcessorUtil;
 import io.opentelemetry.exporters.logging.LoggingSpanExporter;
 import io.opentelemetry.sdk.OpenTelemetrySdk;
 import io.opentelemetry.sdk.trace.MultiSpanProcessor;
