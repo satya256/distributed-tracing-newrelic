@@ -1,0 +1,6 @@
+.DS_Store*
+*/.gradle/*
+*\.idea*
+*\.gitattributes*
+java/distributedtracing/.idea/*
+*java/distributedtracing/.idea/*
