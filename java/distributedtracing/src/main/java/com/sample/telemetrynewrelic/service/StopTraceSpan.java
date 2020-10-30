@@ -17,7 +17,7 @@ public final class StopTraceSpan {
    * @param traceName the trace name
    * @param status    the status
    */
-  public void stop(final String traceName, final Status status) {
+  public static void stop(final String traceName, final Status status) {
     Objects.requireNonNull(status);
     Objects.requireNonNull(traceName);
 

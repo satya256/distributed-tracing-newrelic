@@ -30,7 +30,7 @@ java {
 }
 
 def projectGroup = 'com.sample'
-def projectVersion = '0.0.1-SNAPSHOT'
+def projectVersion = '2.0.0'
 def projectName = 'telemetrynewrelic'
 
 version(projectVersion)
@@ -79,10 +79,10 @@ publishing {
     }
 
     publications {
+
         release(MavenPublication) {
             setGroup(projectGroup)
             setVersion(projectVersion)
-            artifactId = projectName
             from(components.java)
 
             pom {

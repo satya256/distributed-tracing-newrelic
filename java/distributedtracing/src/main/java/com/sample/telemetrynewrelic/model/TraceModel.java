@@ -135,7 +135,6 @@ public class TraceModel {
     this.remoteParentContext = parentContext;
   }
 
-
   /**
    * Gets parent span context.
    *
