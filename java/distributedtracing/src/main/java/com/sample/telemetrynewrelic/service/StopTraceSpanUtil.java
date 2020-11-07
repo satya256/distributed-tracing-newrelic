@@ -9,7 +9,7 @@ import java.util.Objects;
 /**
  * The type Stop trace span.
  */
-public final class StopTraceSpan {
+public final class StopTraceSpanUtil {
 
   /**
    * Stop.
@@ -30,5 +30,11 @@ public final class StopTraceSpan {
 
     dataModel.getTraceSpan().setStatus(status);
     dataModel.getTraceSpan().stop();
+  }
+
+  /**
+   * Instantiates a new Stop trace span util.
+   */
+  private StopTraceSpanUtil() {
   }
 }

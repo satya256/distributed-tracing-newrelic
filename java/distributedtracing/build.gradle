@@ -17,11 +17,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.opentelemetry:opentelemetry-sdk:0.8.0'
-    implementation 'io.opentelemetry:opentelemetry-exporters-inmemory:0.8.0'
-    implementation 'io.opentelemetry:opentelemetry-exporters-logging:0.8.0'
-    implementation 'io.opentelemetry:opentelemetry-extension-trace-propagators:0.8.0'
-    implementation 'com.newrelic.telemetry:opentelemetry-exporters-newrelic:0.8.1'
+    api 'io.opentelemetry:opentelemetry-sdk:0.8.0'
+    api 'io.opentelemetry:opentelemetry-exporters-inmemory:0.8.0'
+    api 'io.opentelemetry:opentelemetry-exporters-logging:0.8.0'
+    api 'io.opentelemetry:opentelemetry-extension-trace-propagators:0.8.0'
+    api 'com.newrelic.telemetry:opentelemetry-exporters-newrelic:0.8.1'
 }
 
 java {
@@ -30,7 +30,7 @@ java {
 }
 
 def projectGroup = 'com.sample'
-def projectVersion = '2.0.0'
+def projectVersion = '2.0.3'
 def projectName = 'telemetrynewrelic'
 
 version(projectVersion)

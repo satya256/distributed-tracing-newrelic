@@ -10,6 +10,7 @@ import io.opentelemetry.sdk.trace.config.TraceConfig;
 import io.opentelemetry.sdk.trace.export.SimpleSpanProcessor;
 import io.opentelemetry.trace.Tracer;
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * The type Trace sdk.
@@ -116,6 +117,12 @@ public final class TraceSdk {
                    final String instrumentationName,
                    final String instrumentationVersion,
                    final Istorage storage) {
+    Objects.requireNonNull(newRelicApiKey);
+    Objects.requireNonNull(newRelicServiceName);
+    Objects.requireNonNull(instrumentationName);
+    Objects.requireNonNull(instrumentationVersion);
+    Objects.requireNonNull(sampler);
+
     this.sampler = sampler;
     this.newRelicApiKey = newRelicApiKey;
     this.newRelicServiceName = newRelicServiceName;

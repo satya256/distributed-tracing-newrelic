@@ -8,7 +8,7 @@ import io.grpc.Context;
 /**
  * The type Extract trace context.
  */
-public final class ExtractTraceContext {
+public final class ExtractTraceContextUtil {
 
   /**
    * Extract context.
@@ -25,7 +25,7 @@ public final class ExtractTraceContext {
   /**
    * Instantiates a new Extract trace context.
    */
-  private ExtractTraceContext() {
+  private ExtractTraceContextUtil() {
     //Empty.
   }
 }

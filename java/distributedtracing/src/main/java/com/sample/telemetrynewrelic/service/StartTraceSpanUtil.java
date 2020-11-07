@@ -3,7 +3,7 @@ package com.sample.telemetrynewrelic.service;
 import com.sample.telemetrynewrelic.core.TraceSdk;
 import com.sample.telemetrynewrelic.core.TraceSpan;
 import com.sample.telemetrynewrelic.model.TraceModel;
-import com.sample.telemetrynewrelic.utils.ExtractTraceContext;
+import com.sample.telemetrynewrelic.utils.ExtractTraceContextUtil;
 import io.opentelemetry.trace.Span;
 import io.opentelemetry.trace.SpanContext;
 import java.util.Collections;
@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * The type Start trace span.
  */
-public final class StartTraceSpan {
+public final class StartTraceSpanUtil {
 
   /**
    * Start internal.
@@ -110,9 +110,16 @@ public final class StartTraceSpan {
 
     if (underRemoteParentContext) {
       final TraceModel traceModel =
-          new TraceModel(Span.Kind.INTERNAL, Collections.emptyMap(), null, ExtractTraceContext.extract());
+          new TraceModel(Span.Kind.INTERNAL, Collections.emptyMap(), null, ExtractTraceContextUtil.extract());
 
       startInternal(traceModel, traceName);
     }
+  }
+
+  /**
+   * Instantiates a new Start trace span util.
+   */
+  private StartTraceSpanUtil() {
+    //
   }
 }
